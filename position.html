@@ -20,17 +20,40 @@
         .pos-absolute {
             position:absolute;
             background:red;
+            z-index: 1;
+            top: 10px;
+            left: 10px;
         }
 
         .pos-fixed {
             position:fixed;
             background:yellow;
+            z-index: 1;
+            top: 10px;
+            left: 10px;
         }
+        .popup {
+            border: 1px solid #000;
+            width: 300px;
+            height: 300px;
+            margin:auto;
+            position: relative;
+        }
+
+        .popup-button{
+            position: absolute;
+    bottom:0;    
+    }
     </style>
 </head>
 <body>
-    <div class="item pos-relative">relative</div>
+    <!-- <div class="item pos-relative">relative</div>
     <div class="item pos-absolute">absolute</div>
-    <div class="item pos-fixed">fixed</div>
+    <div class="item pos-fixed">fixed</div> -->
+    <div class="popup">
+        <div class="popup-button">
+        <button>Click</button>
+    </div>
+</div>
 </body>
 </html>
