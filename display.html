@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display</title>
+     <style>
+        div {
+            background: rgb(221, 182, 182);
+            color: rgb(122, 122, 117);
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        span {
+            background: rgb(191, 191, 212);
+            color: #fff;
+            width: 300px;
+            height: 300px;
+        }
+
+        .over {
+            width: 100px;
+            height: 120px;
+            background: #dedede;
+            overflow-y: auto;
+            /* overflow-y: hidden; */
+        }
+    </style><div>display: block;</div>
+    <div class="inline">display: block;</div>
+    <div>display: block;</div>
+
+    <span>Default</span>
+    <span style="display:inline-block;">Sp</span>
+    <span>Default</span>
+
+    <div style="display: none;">Hello</div>
+    <div class="over">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>
