@@ -66,7 +66,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: red;
+    background: rgb(233, 27, 27);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -94,7 +94,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: yellow;
+    background: rgb(223, 212, 163);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,7 +119,26 @@ a {
     width: 20px;
     height: 20px;
     border-radius: 20px;
-    background: rgb(11, 48, 172);
+    background: rgb(97, 97, 102);
     display: inline-block;
     margin-right: 10px;
+}
+
+.img-resource:hover {
+    background: rgb(102, 97, 97);
+    color: #fff;
+}
+
+/* error */
+/* .img-resource :hover {
+}
+/* error */
+/* :hover {
+} */
+.gender:checked {
+    width: 30px;
+    height: 30px;
+}
+.slider-dots li:nth-child(2) .slider-dot {
+    background:rgb(255, 233, 37);
 }
