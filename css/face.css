@@ -1,7 +1,7 @@
 .face {
     width: 400px;
     height:400px;
-    background-color: #7a78df;
+    background-color: #3f3939;
     margin: auto;
     margin-top: 20px;
     position: relative;
@@ -29,7 +29,7 @@
 .dot {
     width: 50px;
     height: 50px;
-    background-color: #464350;
+    background-color: #d10c0c;
     border-radius: 50px;
     position: absolute;
     top: 25px;
@@ -39,7 +39,7 @@
 .mouth {
     width: 200px;
     height: 80px;
-    background: rgb(248, 221, 209);
+    background: rgb(197, 196, 196);
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -50,7 +50,7 @@
 .thought {
     width: 50px;
     height: 50px;
-    background-color: rgb(197, 95, 64);
+    background-color: rgb(235, 20, 20);
     position: absolute;
     bottom: -25px;
     left: 50%;
