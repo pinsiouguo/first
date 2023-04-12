@@ -142,3 +142,32 @@ a {
 .slider-dots li:nth-child(2) .slider-dot {
     background:rgb(255, 233, 37);
 }
+
+.table{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table td,
+.table th {
+    border: 1px solid #dedede;
+    padding: 10px;
+}
+
+.table tbody tr {
+    background: #dedede;
+}
+
+/* 單數 */
+.table tbody tr:nth-child(odd) {
+    background: rgb(235, 145, 118);
+}
+
+/* 雙數 */
+.table tbody tr:nth-child(even) {
+    background: rgb(131, 93, 238);
+}
