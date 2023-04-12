@@ -171,3 +171,16 @@ a {
 .table tbody tr:nth-child(even) {
     background: rgb(131, 93, 238);
 }
+
+.menu-item li {
+    margin-right: 20px;
+    background: rgb(135, 135, 143);
+}
+
+.menu-item li:last-child {
+    margin-right: 0;
+}
+
+.menu-item li:nth-child(7) {
+    color: red;
+}
