@@ -184,3 +184,36 @@ a {
 .menu-item li:nth-child(7) {
     color: red;
 }
+
+.block {
+    position: relative;
+}
+
+.block::before {
+    content: 'David ';
+}
+
+.block::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background: yellow;
+    position: absolute;
+    right: 0;
+}
+
+.group1 .switch + .item {
+    color: red;
+}
+
+.group2 .switch + .item {
+    color: red;
+}
+
+/* .group1 .switch ~ .item {
+    color: red;
+}
+.group2 .switch ~ .item {
+    color: red;
+} */
