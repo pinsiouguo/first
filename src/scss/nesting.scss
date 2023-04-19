@@ -1,0 +1,19 @@
+@import 'reset';
+
+#header {
+    background: rgb(250, 250, 18);
+
+    // 自己
+    &:hover {
+        background: rgb(4, 4, 163);
+    }
+
+    // 後代
+    .title {
+        color: red;
+
+        .content {
+            color: rgb(88, 88, 76);
+        }
+    }
+}
