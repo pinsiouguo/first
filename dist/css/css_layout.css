@@ -99,25 +99,77 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: rgb(255, 210, 210);
+  background: #22223b;
   color: #fff;
-  height: 300px;
+  height: 350px;
 }
 .join-form .join-form-wrap .join-form-content > div {
   width: 50%;
   padding: 30px;
 }
-
-.join-form-left-side {
+.join-form .join-form-wrap .join-form-content .join-form-left-side {
   position: relative;
 }
-.join-form-left-side::before {
+.join-form .join-form-wrap .join-form-content .join-form-left-side::before {
   content: "";
   position: absolute;
   border-left: 3px dashed #fff;
   height: calc(100% - 60px);
   right: 0;
   top: 30px;
+}
+.join-form .join-form-wrap .join-form-content .slogan {
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+.join-form .join-form-wrap .join-form-content .slogan::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 140px);
+  width: 0;
+  height: 3px;
+  border-left: solid 100px #9a8c98;
+  border-right: solid 180px #fff;
+}
+.join-form .join-form-wrap .join-form-content .text-content {
+  line-height: 30px;
+  text-align: justify;
+}
+.join-form .join-form-wrap .join-form-content .form-control {
+  margin-bottom: 15px;
+}
+.join-form .join-form-wrap .join-form-content .form-control input {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.join-form .join-form-wrap .join-form-content .join-form-submit {
+  text-align: right;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button.primary {
+  background: #1042cc;
+  color: #fff;
+}
+.button.primary:hover {
+  background: #285ef3;
 }
 
 .wrap {
