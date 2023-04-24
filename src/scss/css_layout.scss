@@ -240,6 +240,20 @@ html {
             left: calc(50% + 50px);
             background: #22223b;
             padding: 20px;
+            border-radius: 6px;
+
+
+            h4 {
+                margin-bottom: 15px;
+            }
+        }
+
+        &:nth-child(even) {
+            .text {
+                left: unset;
+                right: calc(50% + 50px);
+                text-align: right;
+            }
         }
     }
 }

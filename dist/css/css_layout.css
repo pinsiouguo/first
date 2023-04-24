@@ -226,4 +226,13 @@ html {
   left: calc(50% + 50px);
   background: #22223b;
   padding: 20px;
+  border-radius: 6px;
+}
+.flow .item .text h4 {
+  margin-bottom: 15px;
+}
+.flow .item:nth-child(even) .text {
+  left: unset;
+  right: calc(50% + 50px);
+  text-align: right;
 }/*# sourceMappingURL=css_layout.css.map */
