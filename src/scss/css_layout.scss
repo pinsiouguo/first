@@ -1,7 +1,8 @@
 @import 'reset';
 
-body {
-    background: #000
+body,html {
+    background: #000;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -37,23 +38,22 @@ body {
                     text-align: center;
                     margin-right: 13px;
                     font-family: 'Noto Sans TC', sans-serif;
-                    ;
-                    font-size: 16px;
-
-                    &:hover {
-                        color: rgb(47, 47, 248);
-
-                        &:last-child {
+                    
+                    font-size: 16px;                        
+                    &:last-child {
                             margin-right: 0;
                         }
 
-                        .en {
+                    &:hover {
+                        color: #9a8c98;
+                    }
+                    
+                    .en {
                             text-transform: uppercase;
                             font-size: 14px;
                             font-weight: 800;
                             font-family: 'Courier New', Courier, monospace;
                         }
-                    }
                 }
             }
         }
@@ -119,24 +119,7 @@ body {
                     top: 30px;
                 }
             }
-            .slogan {
-                font-size: 30px;
-                text-align: center;
-                position: relative;
-                padding-bottom: 10px;
-                margin-bottom: 15px;
             
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: 0;
-                    left: calc(50% - 140px);
-                    width: 0;
-                    height: 3px;
-                    border-left: solid 100px #9a8c98;
-                    border-right: solid 180px #fff;
-                }
-            }
             .text-content {
                 line-height: 30px;
                 text-align: justify;
@@ -171,19 +154,50 @@ body {
     cursor: pointer;
 
     &.primary {
-        background:#1042cc;
+        background:#c9ada7;
         color:#fff;
 
         &:hover {
-            background:#285ef3;
+            background:#9a8c98;
         }
     }
 }
 
+.slogan {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(50% - 140px);
+        width: 0;
+        height: 3px;
+        border-left: solid 100px #9a8c98;
+        border-right: solid 180px #fff;
+    }
+}
 
-
-.wrap {
+.courses {
     height: 100vh;
-    background:rgb(128, 128, 119);
+    background-color:rgb(65, 65, 65);
+    background-image: url(../images/process.jpeg);
+    background-size: cover;
+    position: relative;
+    color:#fff;
+    padding-top: 120px;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.356);
+    }
 }
