@@ -60,43 +60,71 @@ body {
     }
 }
 
-    .footer {
-        background: #d4a373;
-        height: 100px;
+.footer {
+    background: #d4a373;
+    height: 100px;
 
-        .footer-content {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            height: 100%;
-        }
+    .footer-content {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.join-form {
+    height: 100vh;
+    background-color: #fefae0;
+    background-image: url(../images/banner.jpeg);
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.356);
     }
 
-    .join-form {
-        height: 100vh;
-        background-color: #fefae0;
+    .join-form-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
-        .join-form-wrap {
+        .join-form-content {
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
+            justify-content: space-between;
+            background: rgb(255, 210, 210);
+            color: #fff;
+            height: 300px;
 
-            .join-form-content {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                background: rgb(255, 210, 210);
-                height: 300px;
-                width: 100%;
-
-                >div {
-                    width: 50%;
-                }
+            >div {
+                width: 50%;
+                padding:30px;
             }
         }
     }
+}
 
-    .wrap {
-        height: 100vh;
+.join-form-left-side {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-left: 3px dashed #fff;
+        height: calc(100% - 60px);
+        right: 0;
+        top: 30px;
     }
+}
+
+.wrap {
+    height: 100vh;
+    background:rgb(128, 128, 119);
+}
