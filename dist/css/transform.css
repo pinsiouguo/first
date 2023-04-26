@@ -67,6 +67,9 @@ a {
   position: relative;
   overflow: hidden;
 }
+.product .product-img > div:first-child {
+  transition-duration: 1s;
+}
 .product .product-img:hover > div:first-child {
   transform: scale(2);
 }
@@ -94,4 +97,21 @@ a {
   margin: 50px;
   font-size: 5px;
   transform: scale(0.5);
+}
+
+.bg-change {
+  margin: 50px auto;
+  background: rgb(202, 43, 43);
+  color: rgb(0, 0, 0);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: background;
+  transition-duration: 3s;
+}
+.bg-change:hover {
+  background: rgb(11, 29, 105);
+  color: rgb(255, 238, 0);
 }/*# sourceMappingURL=transform.css.map */
