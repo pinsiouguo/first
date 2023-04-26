@@ -114,4 +114,96 @@ a {
 .bg-change:hover {
   background: rgb(11, 29, 105);
   color: rgb(255, 238, 0);
+}
+
+.to-run {
+  margin: 50px 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  background: rgb(45, 131, 243);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  position: relative;
+}
+
+#run-trigger {
+  display: none;
+}
+#run-trigger:checked ~ .to-run {
+  -webkit-animation-name: run-m;
+          animation-name: run-m;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #3b3ef3;
+  color: #fff;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+.button:hover {
+  background: #e95035;
+}
+
+@-webkit-keyframes run {
+  from {
+    left: 0;
+    background: rgb(45, 131, 243);
+  }
+  to {
+    left: 100%;
+    background: red;
+  }
+}
+
+@keyframes run {
+  from {
+    left: 0;
+    background: rgb(45, 131, 243);
+  }
+  to {
+    left: 100%;
+    background: red;
+  }
+}
+@-webkit-keyframes run-m {
+  0% {
+    left: 0;
+    top: 0;
+    background: rgb(45, 131, 243);
+  }
+  50% {
+    left: 50%;
+    top: 100px;
+    background: yellow;
+  }
+  100% {
+    left: 100%;
+    top: 0;
+    background: red;
+  }
+}
+@keyframes run-m {
+  0% {
+    left: 0;
+    top: 0;
+    background: rgb(45, 131, 243);
+  }
+  50% {
+    left: 50%;
+    top: 100px;
+    background: yellow;
+  }
+  100% {
+    left: 100%;
+    top: 0;
+    background: red;
+  }
 }/*# sourceMappingURL=transform.css.map */
