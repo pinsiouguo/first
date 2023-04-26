@@ -52,6 +52,7 @@ a {
   padding: 10px;
   width: 300px;
   height: 500px;
+  overflow: hidden;
 }
 .product .product-img {
   width: 100%;
@@ -65,6 +66,9 @@ a {
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+.product .product-img:hover > div:first-child {
+  transform: scale(2);
 }
 .product .product-img .product-discount {
   position: absolute;
@@ -84,4 +88,10 @@ a {
 .product .product-memo {
   font-size: 15px;
   font-weight: 800;
+}
+
+.small-font {
+  margin: 50px;
+  font-size: 5px;
+  transform: scale(0.5);
 }/*# sourceMappingURL=transform.css.map */
