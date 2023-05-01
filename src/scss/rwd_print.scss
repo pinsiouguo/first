@@ -9,7 +9,8 @@
 
 .title {
     text-align: center;
-    margin: 20px 0;
+    padding-top: 50px;
+    margin: 30px 0;
 }
 
 .table {
@@ -18,13 +19,13 @@
     border-spacing: 0;
 
     th {
-        background: #3669d8;
+        background: #9fb6cc;
         color: #fff;
     }
 
     th,
     td {
-        border: 1px solid #000;
+        border: 1px solid #888787;
         padding: 10px;
     }
 
@@ -40,7 +41,7 @@
     button {
         padding: 10px 20px;
         border: 0;
-        background: #3669d8;
+        background: #333741;
         color: #fff;
         font-size: 16px;
         font-weight: 800;
@@ -52,8 +53,4 @@
     }
 }
 
-@media print {
-    .func {
-        display: none;
-    }
-}
+@import 'rwd_for_print';
