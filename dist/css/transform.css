@@ -135,8 +135,10 @@ a {
   display: none;
 }
 #run-trigger:checked ~ .to-run {
-  animation-name: run-m;
-  animation-duration: 3s;
+  -webkit-animation-name: run-m;
+          animation-name: run-m;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
 }
 
 .button {
@@ -150,6 +152,17 @@ a {
   background: #cc3131;
 }
 
+@-webkit-keyframes run {
+  from {
+    left: 0;
+    background: rgb(39, 86, 148);
+  }
+  to {
+    left: 100%;
+    background: rgb(182, 54, 54);
+  }
+}
+
 @keyframes run {
   from {
     left: 0;
@@ -158,6 +171,23 @@ a {
   to {
     left: 100%;
     background: rgb(182, 54, 54);
+  }
+}
+@-webkit-keyframes run-m {
+  0% {
+    left: 0;
+    top: 0;
+    background: rgb(93, 116, 146);
+  }
+  50% {
+    left: 50%;
+    top: 100px;
+    background: rgb(231, 231, 104);
+  }
+  100% {
+    left: 100%;
+    top: 0;
+    background: rgb(202, 61, 61);
   }
 }
 @keyframes run-m {
