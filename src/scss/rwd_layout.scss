@@ -63,7 +63,7 @@ html {
 
         .mobile-switch {
             // height: 5%;
-            display: flex;
+            display: none;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -290,3 +290,5 @@ html {
         }
     }
 }
+
+@import '_rwd_layout_mobile';
