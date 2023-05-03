@@ -164,6 +164,39 @@ html {
             .text-content {
                 line-height: 30px;
                 text-align: justify;
+                text-align: justify;
+                overflow: hidden;
+                position: relative;
+                height: 70%;
+
+                .text-more {
+                    position: absolute;
+                    width: 100%;
+                    height: 40px;
+                    background: rgb(255, 255, 255);
+                    color: #000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    left: 0;
+                    bottom: 0;
+                    cursor: pointer;
+                }
+            }
+
+            #text-more-box {
+                display: none;
+
+                &:checked {
+                    ~.text-content {
+                        overflow: auto;
+
+
+                        .text-more {
+                            display: none;
+                        }
+                    }
+                }
             }
 
             .form-control {

@@ -150,6 +150,32 @@ html {
 .join-form .join-form-wrap .join-form-content .text-content {
   line-height: 30px;
   text-align: justify;
+  text-align: justify;
+  overflow: hidden;
+  position: relative;
+  height: 70%;
+}
+.join-form .join-form-wrap .join-form-content .text-content .text-more {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box {
+  display: none;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box:checked ~ .text-content {
+  overflow: auto;
+}
+.join-form .join-form-wrap .join-form-content #text-more-box:checked ~ .text-content .text-more {
+  display: none;
 }
 .join-form .join-form-wrap .join-form-content .form-control {
   margin-bottom: 15px;
@@ -314,5 +340,25 @@ html {
     position: relative;
     transform: rotate(-45deg);
     top: -5px;
+  }
+  .join-form .join-form-wrap .join-form-content {
+    flex-direction: column;
+    background: transparent;
+  }
+  .join-form .join-form-wrap .join-form-content > div {
+    width: 100%;
+    height: 300px;
+    background: rgb(5, 47, 138);
+  }
+  .join-form .join-form-wrap .join-form-content .join-form-left-side::before {
+    right: unset;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: calc(100% - 60px);
+    margin-left: 30px;
+    border-left-width: 0;
+    border-bottom: 3px dashed #fff;
   }
 }/*# sourceMappingURL=rwd_layout.css.map */
