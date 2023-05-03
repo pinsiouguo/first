@@ -43,6 +43,9 @@ html {
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+.header .header-content #mobile-switch-box {
+  display: none;
+}
 .header .header-content .menu ul {
   list-style-type: none;
   display: flex;
@@ -66,16 +69,17 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 .header .header-content .mobile-switch {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  display: none;
 }
 .header .header-content .mobile-switch > span {
   width: 30px;
   height: 4px;
-  background: #6b6b6b;
+  background: #9a8c98;
   margin-bottom: 6px;
   border-radius: 8px;
   transition: 0.3s;
@@ -267,5 +271,24 @@ html {
   }
   .header .header-content .mobile-switch {
     display: flex;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .menu {
+    display: block;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span {
+    background: #9a8c98;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:first-child {
+    position: relative;
+    transform: rotate(45deg);
+    top: 5px;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:nth-child(2) {
+    display: none;
+  }
+  .header .header-content #mobile-switch-box:checked ~ .mobile-switch > span:last-child {
+    position: relative;
+    transform: rotate(-45deg);
+    top: -5px;
   }
 }/*# sourceMappingURL=rwd_layout.css.map */

@@ -8,6 +8,36 @@
             .mobile-switch {
                 display: flex;
             }
+
+            #mobile-switch-box {
+                &:checked {
+                    ~.menu {
+                        display: block;
+                    }
+
+                    ~.mobile-switch {
+                        >span {
+                            background: #9a8c98;
+
+                            &:first-child {
+                                position: relative;
+                                transform: rotate(45deg);
+                                top: 5px;
+                            }
+
+                            &:nth-child(2) {
+                                display: none;
+                            }
+
+                            &:last-child {
+                                position: relative;
+                                transform: rotate(-45deg);
+                                top: -5px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
