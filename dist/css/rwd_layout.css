@@ -371,4 +371,11 @@ html {
     border-left-width: 0;
     border-bottom: 3px dashed #fff;
   }
+  .flow .item {
+    justify-content: flex-start;
+    padding-left: 5px;
+  }
+  .flow .item::before {
+    left: 18px;
+  }
 }/*# sourceMappingURL=rwd_layout.css.map */
