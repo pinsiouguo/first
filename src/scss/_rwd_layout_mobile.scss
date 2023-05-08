@@ -117,6 +117,18 @@
             &::before {
                 left: 18px;
             }
+
+            .text {
+                left: 50px;
+            }
+
+            &:nth-child(even) {
+                .text {
+                    left: 50px;
+                    right: unset;
+                    text-align: left;
+                }
+            }
         }
     }
 }

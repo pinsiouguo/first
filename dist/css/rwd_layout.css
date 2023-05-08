@@ -378,4 +378,12 @@ html {
   .flow .item::before {
     left: 18px;
   }
+  .flow .item .text {
+    left: 50px;
+  }
+  .flow .item:nth-child(even) .text {
+    left: 50px;
+    right: unset;
+    text-align: left;
+  }
 }/*# sourceMappingURL=rwd_layout.css.map */
