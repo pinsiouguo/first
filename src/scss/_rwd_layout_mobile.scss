@@ -70,24 +70,27 @@
     }
 
     .join-form {
-
-        // .join-form::before
-        &::before {}
+        height: unset;
+        // min-height: 100vh;
 
         .join-form-wrap {
+            height: unset;
+            align-items: flex-start;
+            padding-top: 120px;
 
             .join-form-content {
                 flex-direction: column;
                 background: transparent;
+                height: unset;
+                padding-bottom: 150px;
 
                 >div {
                     width: 100%;
                     height: 300px;
-                    background: rgb(5, 47, 138);
+                    background: rgb(75, 67, 67);
                 }
 
                 .join-form-left-side {
-
 
                     // .join-form-left-side::before
                     &::before {
@@ -102,33 +105,6 @@
                         border-bottom: 3px dashed #fff;
                     }
                 }
-
-                .text-content {
-
-
-                    .text-more {}
-                }
-
-                #text-more-box {
-
-
-                    &:checked {
-                        ~.text-content {
-
-
-
-                            .text-more {}
-                        }
-                    }
-                }
-
-                .form-control {
-
-
-                    input {}
-                }
-
-                .join-form-submit {}
             }
         }
     }

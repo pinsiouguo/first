@@ -128,7 +128,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background: #22223b;
+  background: rgb(75, 67, 67);
   color: #fff;
   height: 350px;
 }
@@ -341,14 +341,24 @@ html {
     transform: rotate(-45deg);
     top: -5px;
   }
+  .join-form {
+    height: unset;
+  }
+  .join-form .join-form-wrap {
+    height: unset;
+    align-items: flex-start;
+    padding-top: 120px;
+  }
   .join-form .join-form-wrap .join-form-content {
     flex-direction: column;
     background: transparent;
+    height: unset;
+    padding-bottom: 150px;
   }
   .join-form .join-form-wrap .join-form-content > div {
     width: 100%;
     height: 300px;
-    background: rgb(5, 47, 138);
+    background: rgb(75, 67, 67);
   }
   .join-form .join-form-wrap .join-form-content .join-form-left-side::before {
     right: unset;
