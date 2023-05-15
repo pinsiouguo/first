@@ -90,3 +90,21 @@ for (let sindex = 0; sindex < 100; sindex++) {
 }
 
 console.table(students100);
+
+const a1 = function () {
+    console.log('Origin function');
+}
+
+const a2 = () => {
+    console.log('Arror function');
+}
+
+nums.forEach(function (snum, index) {
+    console.log(`第 ${index + 1} 位學生: ${snum}`);
+})
+
+const add20 = function (snum, index) {
+    console.log(`具名函數--第 ${index + 1} 位學生: ${snum}`);
+}
+
+nums.forEach(add20);
