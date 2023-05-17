@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 800px;
   height: 100%;
@@ -20,11 +24,47 @@ a {
   margin: auto;
 }
 
-#main {
-  margin-top: 20px;
-  color: red;
+.input-block {
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
+}
+.input-block > div {
+  flex: 1;
+}
+.input-block input {
+  padding: 5px;
+  border: 0;
+  background: #dedede;
+  outline: 0;
+  font-size: 14px;
+}
+.input-block button {
+  padding: 5px 10px;
+  border: 0;
+  background: #2c2020;
+  color: #fff;
+  cursor: pointer;
+}
+.input-block button:hover {
+  background: #c4b7b7;
 }
 
-#menu li {
-  color: rgb(40, 38, 182);
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table th,
+.table td {
+  border: 1px solid #cfcfcf;
+  padding: 5px;
+  text-align: center;
+}
+.table th {
+  background: #2c2020;
+  color: #fff;
+}
+.table tbody tr:nth-child(even) td {
+  background: #c4b7b7;
 }/*# sourceMappingURL=js_99.css.map */
