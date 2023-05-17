@@ -29,7 +29,7 @@
     button {
         padding: 5px 10px;
         border: 0;
-        background: #2c2020;
+        background: #463f3a;
         color: #fff;
         cursor: pointer;
 
@@ -46,19 +46,19 @@
 
     th,
     td {
-        border: 1px solid #cfcfcf;
+        border: 1px solid #f4f3ee;
         padding: 5px;
         text-align: center;
     }
 
     th {
         background: #2c2020;
-        color: #fff;
+        color: #f4f3ee;
     }
 
     tbody {
         tr:nth-child(even) td {
-            background: #c4b7b7;
+            background: #bcb8b1;
         }
     }
 }
