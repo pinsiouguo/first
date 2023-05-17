@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 800px;
+  height: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin: auto;
+}
+
+#main {
+  margin-top: 20px;
+  color: red;
+}
+
+#menu li {
+  color: rgb(40, 38, 182);
+}/*# sourceMappingURL=js_99.css.map */
