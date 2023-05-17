@@ -18,13 +18,27 @@ const genTable = () => {
         return;
     }
 
+    let thead = [];
+    thead.push('');
+
     let result = [];
     for (let i = 1; i <= n1.value; i++) {
+        thead.push(i);
         for (let j = 1; j <= n2.value; j++) {
             result.push(`${i} x ${j} = ${i * j}`);
         }
     }
-    console.log(result);
+
+    let table = document.querySelector('#table');
+    let theadTr = table.querySelector('thead tr');
+
+    theadTr.innerHTML = '';
+    thead.forEach((n, nindex) => {
+        theadTr.innerHTML += `<th>${n}</th>`;
+        // theadTr.innerHTML = theadTr.innerHTML + `<th>${n}</th>`;
+    });
+
+    console.log(thead);
 }
 
 
