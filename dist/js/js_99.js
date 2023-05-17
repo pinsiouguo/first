@@ -18,7 +18,13 @@ const genTable = () => {
         return;
     }
 
-    console.log('I can!');
+    let result = [];
+    for (let i = 1; i <= n1.value; i++) {
+        for (let j = 1; j <= n2.value; j++) {
+            result.push(`${i} x ${j} = ${i * j}`);
+        }
+    }
+    console.log(result);
 }
 
 

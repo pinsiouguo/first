@@ -7,6 +7,7 @@
     padding-right: 15px;
     position: relative;
     margin: auto;
+
 }
 
 .input-block {
@@ -20,21 +21,23 @@
 
     input {
         padding: 5px;
+        border-radius: 15px;
         border: 0;
-        background: #dedede;
+        background: #f4f3ee;
         outline: 0;
         font-size: 14px;
     }
 
     button {
         padding: 5px 10px;
+        border-radius: 20px;
         border: 0;
         background: #463f3a;
         color: #fff;
         cursor: pointer;
 
         &:hover {
-            background: #c4b7b7
+            background: #bcb8b1
         }
     }
 }
