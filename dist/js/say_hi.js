@@ -21,3 +21,16 @@ const sayHi = () => {
 let hi = document.querySelector('#hi');
 
 hi.addEventListener('click', sayHi);
+
+let name = document.querySelector('#name');
+
+name.addEventListener('change', () => {
+    if (!name.value) {
+        alert('請輸入姓名');
+        name.focus();
+    }
+})
+
+name.addEventListener('blur', () => {
+    console.log(`blur: ${name.value}`);
+})
