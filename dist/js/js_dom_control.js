@@ -30,3 +30,18 @@ mobileIcon.addEventListener('click', () => {
         mobileIcon.classList.add('active');
     }
 });
+
+const lazyLoad = () => {
+    let images = document.querySelectorAll('.image-block img');
+    images.forEach(img => {
+        let src = img.dataset.src;
+        if (src) {
+            img.src = src;
+        }
+    });
+}
+
+
+setTimeout(() => {
+    lazyLoad();
+}, 5000)
