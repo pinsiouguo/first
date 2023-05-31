@@ -8,6 +8,13 @@
     margin: auto;
 }
 
+.slogan {
+    background: #dedede;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 .todo-input {
     display: flex;
     align-items: center;
@@ -34,5 +41,32 @@
         background: #757575;
         color: #fff;
         margin-left: 15px;
+        border-radius: 5%;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+
+        &:hover {
+            background: #505050;
+        }
+    }
+}
+
+.pending-item {
+    input[type="checkbox"]:checked~label {
+        text-decoration: line-through;
+    }
+}
+
+.todo-status {
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    >div {
+        width: calc(50% - 8px);
+        border: 1px solid #dedede;
+        padding: 15px;
     }
 }

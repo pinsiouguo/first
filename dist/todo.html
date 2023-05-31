@@ -15,9 +15,39 @@
         <div class="todo-input">
             <label for="item-name">ITEM</label>
             <input type="text" id="item-name">
-            <button>加入</button>
+            <button id="add-btn">加入</button>
         </div>
-    </div>
+        <div class="todo-status">
+            <div class="pending-item">
+                <h3 class="slogan">待辦清單</h3>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="item-1">
+                        <label for="item-1">Hello</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="item-2">
+                        <label for="item-2">World</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="done-item">
+                <div class="pending-item">
+                    <h3 class="slogan">完成清單</h3>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="item-1">
+                            <label for="item-1">Hello</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="item-2">
+                            <label for="item-2">World</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 </body>
 <script src="js/todo.js"></script>
 
