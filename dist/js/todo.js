@@ -11,8 +11,11 @@ const init = () => {
                 title: '新增錯誤',
                 text: '請輸入項目名稱',
                 icon: 'error',
+            }).then(() => {
+                setTimeout(() => {
+                    itemName.focus();
+                }, 500)
             })
-            itemName.focus();
             return;
         }
 
