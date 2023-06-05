@@ -1,5 +1,9 @@
 @import 'reset';
 
+[v-cloak] {
+    display: none;
+}
+
 .container {
     max-width: 800px;
     height: 100%;
@@ -47,7 +51,7 @@
         cursor: pointer;
 
         &:hover {
-            background: #505050;
+            background: #313131;
         }
     }
 }
@@ -56,7 +60,20 @@
     input[type="checkbox"]:checked~label {
         text-decoration: line-through;
     }
+
+    >ul li {
+        padding: 10px;
+        background: #777474;
+        color: #fff;
+        margin-bottom: 8px;
+        cursor: pointer;
+
+        &:hover {
+            background: #313131;
+        }
+    }
 }
+
 
 .todo-status {
     display: flex;

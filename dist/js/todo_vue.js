@@ -22,6 +22,16 @@ let vm = Vue.createApp({
                 return;
             }
             this.pending.push(value);
+            this.itemValue = '';
+            // 輸入完選項後清空
+            this.$refs.itemValue.focus();
+        },
+        toDone(index) {
+            let value = this.pending[index];
+
+            console.log(index, value);
+            // 把代辦項目搬移到已完成資料內
+            // 刪除目前代辦項目
         }
     }
 }).mount('#app');

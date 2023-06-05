@@ -16,15 +16,14 @@
             <h1 class="slogan">TODO LIST</h1>
             <div class="todo-input">
                 <label for="item-name">ITEM</label>
-                <input type="text" id="item-name" v-model="itemValue" ref="itemValue" @keyup.enter="doAddItem">>
+                <input type="text" id="item-name" v-model="itemValue" ref="itemValue" @keyup.enter="doAddItem">
                 <button id="add-btn" @click="doAddItem">加入</button>
             </div>
             <div class="todo-status">
                 <div class="pending-item">
                     <h3 class="slogan">待辦清單</h3>
                     <ul id="pending-item">
-                        <li v-for="(item, itemIndex) in pending">
-                            <input type="checkbox">
+                        <li v-for="(item, itemIndex) in pending" @click="toDone(itemIndex)">
                             <label for="">{{ item }}</label>
                         </li>
                         <!-- <li>
@@ -41,19 +40,13 @@
                 <div class="done-item">
                     <h3 class="slogan">完成清單</h3>
                     <ul>
-                        <li>
-                            <input type="checkbox" id="item-1">
-                            <label for="item-1">Hello</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" id="item-2">
-                            <label for="item-2">World</label>
+                        <li v-for="(item, itemIndex) in done">
+                            <label for="">{{ item }}</label>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
 </body>
