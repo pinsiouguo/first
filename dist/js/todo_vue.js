@@ -1,3 +1,12 @@
+const database = {
+    set(key, value) {
+        localStorage.setItem(key, value);
+    },
+    get(key) {
+        return localStorage.getItem(key);
+    }
+}
+
 let vm = Vue.createApp({
     data() {
         return {
@@ -36,7 +45,9 @@ let vm = Vue.createApp({
             // 刪除目前代辦項目
         },
         toPending(index) {
-
+            let value = this.done[index];
+            this.pending.push(value);
+            this.done.splice(index, 1);
         }
     }
 }).mount('#app');
