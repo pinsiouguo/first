@@ -49,6 +49,7 @@ let vm = Vue.createApp({
             let value = this.pending[index];
             this.done.push(value);
             this.pending.splice(index, 1);
+            this.update();
 
             // console.log(index, value);
             // 把代辦項目搬移到已完成資料內
@@ -58,6 +59,11 @@ let vm = Vue.createApp({
             let value = this.done[index];
             this.pending.push(value);
             this.done.splice(index, 1);
+            this.update();
+        },
+        update() {
+            database.set('todo-pending', this.pending);
+            database.set('todo-done', this.done);
         }
     },
     mounted() {
