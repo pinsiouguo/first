@@ -11,6 +11,12 @@
 <body>
     <div id="app">
         <button @click="doAjax">click</button>
+        <div>
+            <h1>Response:</h1>
+            <div>
+                {{ responce }}
+            </div>
+        </div>
     </div>
 
 </body>
@@ -20,16 +26,29 @@
 <script>
     Vue.createApp({
         data() {
-            return {}
+            return {
+                response: '',
+            }
         },
         methods: {
             doAjax() {
-                console.log('ajax!');
-                Swal.fire({
-                    title: 'doAjax',
-                    text: 'Just test',
-                    icon: 'success'
-                })
+                // console.log('ajax!');
+                // Swal.fire({
+                //     title: 'doAjax',
+                //     text: 'Just test',
+                //     icon: 'success'
+                // })
+
+                let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                let request = new XMLHttpRequest();
+                request.addEventListener('load', () => {
+                    this.response = request.responseText;
+                    console.log('AAAA');
+                });
+
+                request.open('GET', api);
+                request.send();
+                console.log('BBBB')
             }
         }
     }).mount('#app')
