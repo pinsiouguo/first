@@ -18,6 +18,12 @@
                 {{ responce }}
             </div>
         </div>
+        <h2>上傳檔案 FORM</h2>
+        <form method="post" action="https://book.niceinfos.com/frontend/api/">
+            <input type="hidden" name="action" value="upload">
+            <input type="file" name="file">
+            <button type="submit">Upload</button>
+        </form>
     </div>
 
 </body>
