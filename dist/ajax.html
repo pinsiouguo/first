@@ -11,6 +11,7 @@
 <body>
     <div id="app">
         <button @click="doAjax">click</button>
+        <button @click="doPost">post</button>
         <div>
             <h1>Response:</h1>
             <div>
@@ -31,6 +32,27 @@
             }
         },
         methods: {
+            doPost() {
+                let api = 'https://book.niceinfos.com/frontend/api/'
+
+                let params = {
+                    action: 'demo',
+                    data: { a: 1, b: 2 }
+                };
+
+                let options = {
+                    method: 'post',
+                    body: JSON.stringify(params),
+                }
+
+                fetch(api, options)
+                    .then(response => {
+                        return response.text();
+                    })
+                    .then(data => {
+                        console.log(data);
+                    })
+            },
             doAjax() {
                 // console.log('ajax!');
                 // Swal.fire({
@@ -40,6 +62,29 @@
                 // })
 
                 // let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                this.useFetch();
+            },
+            useFetch() {
+                let api = 'https://book.niceinfos.com/frontend/api/?action=demo';
+                fetch(api).then(response => {
+                    // return response.json();
+                    return response.text();
+                }).then(data => {
+                    data = 'a';
+                    console.log(typeof data);
+                    console.log(data);
+
+                    try {
+                        data = JSON.parse(data);
+                    } catch (e) {
+                        data = {};
+                    }
+
+                    console.log(data);
+                })
+                console.log('BBBB')
+            },
+            useXML() {
                 let api = 'https://book.niceinfos.com/frontend/api/?action=sleep&a=111';
                 let request = new XMLHttpRequest();
                 request.addEventListener('load', () => {
