@@ -21,4 +21,27 @@
             display: none;
         }
     }
+
+    #mobile-checkbox {
+        &:checked~.header-mobile-switch {
+            >span {
+                background: #1f2128;
+
+                &:first-child {
+                    transform: rotate(45deg);
+                    top: 9px;
+                }
+
+                &:nth-child(2) {
+                    transition: none;
+                    visibility: hidden;
+                }
+
+                &:last-child {
+                    transform: rotate(-45deg);
+                    top: -9px;
+                }
+            }
+        }
+    }
 }
