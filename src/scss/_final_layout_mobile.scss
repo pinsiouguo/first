@@ -1,0 +1,22 @@
+@media screen and (max-width: 800px) {
+    .header {
+
+        background: #b83636;
+
+        .container {}
+
+        .header-menu {
+            display: none;
+        }
+
+        .header-logo {
+            flex: 1;
+        }
+
+        .header-icon {}
+
+        .header-lang {
+            display: none;
+        }
+    }
+}
