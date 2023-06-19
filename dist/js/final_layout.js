@@ -7,11 +7,28 @@ Vue.createApp({
                 { title: '第三張', subtitle: '第三子標題', bg: '/images/process.jpeg' },
             ],
             currentIndex: 0,
+            timer: '',
+            loopSecond: 3
         }
     },
     methods: {
         setIndex(index) {
             this.currentIndex = index;
+            this.doLoop();
+        },
+        doLoop() {
+            clearInterval(this.timer);
+            this.timer = setInterval(() => {
+                let max = this.items.length - 1;
+                if (this.currentIndex >= max) {
+                    this.currentIndex = 0;
+                } else {
+                    this.currentIndex++;
+                }
+            }, this.loopSecond * 1000);
         }
+    },
+    mounted() {
+        this.doLoop();
     }
 }).mount('#app-slider');
