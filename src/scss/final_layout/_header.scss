@@ -2,12 +2,13 @@ $header-bg: #fff;
 
 .header {
     height: 80px;
-    background: #dedede;
+    background: $header-bg;
     font-weight: 700;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 9;
 
     .container {
         display: flex;
