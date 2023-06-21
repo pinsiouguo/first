@@ -32,3 +32,14 @@ Vue.createApp({
         this.doLoop();
     }
 }).mount('#app-slider');
+
+Vue.createApp({
+    data() {
+        return {}
+    },
+    methods: {
+        doToggle() {
+            console.log(123);
+        }
+    }
+}).mount('#patent-design')
